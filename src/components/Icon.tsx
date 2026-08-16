@@ -1,0 +1,2 @@
+type IconName = 'plus' | 'share' | 'chevron' | 'edit' | 'close'
+export function Icon({ name }: { name: IconName }) { const paths = { plus: <><path d="M12 5v14M5 12h14" /></>, share: <><path d="M12 16V3" /><path d="m7 8 5-5 5 5" /><path d="M5 13v6h14v-6" /></>, chevron: <path d="m9 18 6-6-6-6" />, edit: <><path d="m4 20 4.2-1 10.4-10.4a2.1 2.1 0 0 0-3-3L5.2 16 4 20Z" /><path d="m13.8 7.2 3 3" /></>, close: <path d="m6 6 12 12M18 6 6 18" /> }; return <svg viewBox="0 0 24 24" aria-hidden="true">{paths[name]}</svg> }
